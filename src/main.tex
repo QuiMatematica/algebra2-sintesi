@@ -1,0 +1,96 @@
+\documentclass[a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[italian]{babel} 
+\usepackage{tabularx}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{siunitx}
+%\usepackage{amsthm}
+\usepackage{pgfplots}
+\usepackage{mathrsfs}
+\usepackage{rotating}
+\usepackage[backend=biber,style=alphabetic,sorting=ynt]{biblatex}
+\usepackage{mdframed}
+
+% per ultimo:
+\usepackage{hyperref}
+\usepackage{mathtools}
+
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations}
+
+\title{Algebra 2}
+\author{Claudio Signorini}
+\date{\today}
+
+\newcommand{\gen}[1]{\ensuremath{< \negmedspace #1 \negmedspace >}}
+\newcommand{\ordine}[1]{\ensuremath{\lvert #1 \rvert}}
+\newcommand{\indice}[2]{\ensuremath{\lvert #1:#2 \rvert}}
+\newcommand{\modulo}[1]{\ensuremath{\lvert #1 \rvert}}
+\newcommand{\taleche}[0]{\ensuremath{\,:\,}}
+\newcommand{\isomorfo}[0]{\ensuremath{\cong}}
+\newcommand{\normale}[0]{\ensuremath{\unlhd}}
+\newcommand{\divisore}[0]{\ensuremath{\mid}}
+\newcommand{\sse}[0]{\ensuremath{\quad\Longleftrightarrow\quad}}
+\newcommand{\N}[0]{\ensuremath{\mathbb{N}}}
+\newcommand{\Z}[0]{\ensuremath{\mathbb{Z}}}
+\newcommand{\Q}[0]{\ensuremath{\mathbb{Q}}}
+\newcommand{\R}[0]{\ensuremath{\mathbb{R}}}
+\newcommand{\MCD}[2]{\ensuremath{ ( #1 , #2 ) }}
+\newcommand{\insieme}[1]{\ensuremath{ \{ #1 \} }}
+\newcommand{\dividetxt}[0]{\ensuremath{\text{ divide }}}
+\newcommand{\eq}[0]{\ensuremath{\sim}}
+\newcommand{\allora}[0]{\ensuremath{\quad\Longrightarrow\quad}}
+
+\DeclareMathOperator{\mcm}{mcm}
+\DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Stab}{Stab}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\Alt}{Alt}
+\DeclareMathOperator{\Syl}{Syl}
+
+\mdfdefinestyle{theoremstyle}{%
+	linecolor=blue,linewidth=2pt,%
+	frametitlerule=true,%
+	frametitlebackgroundcolor=blue!20,
+	innertopmargin=\topskip,
+}
+\mdtheorem[style=theoremstyle]{teorema}{Teorema}[chapter]
+\mdtheorem[style=theoremstyle]{corollario}{Corollario}[chapter]
+\mdtheorem[style=theoremstyle]{lemma}{Lemma}[chapter]
+\mdtheorem[style=theoremstyle]{esercizio}{Esercizio}[chapter]
+
+\newenvironment{dimostrazione}
+    {\par\medskip
+   \noindent\textbf{Dimostrazione.}\par}
+    {\begin{center}$\square\quad\square\quad\square$\end{center}\bigskip}
+
+\newenvironment{soluzione}
+    {\par\medskip
+   \noindent\textbf{Soluzione.}\par}
+    {\begin{center}$\square\quad\square\quad\square$\end{center}\bigskip}
+
+\definecolor{figura}{rgb}{0.6,0.2,0}
+
+\addbibresource{bibliografia.bib}
+
+\begin{document}
+	
+	\include{title}
+
+	\include{gruppi-abeliani}
+
+%	\printbibliography[heading=bibintoc,title={Bibliografia}]
+
+%	\listoffigures
+
+	\tableofcontents
+
+\end{document}
