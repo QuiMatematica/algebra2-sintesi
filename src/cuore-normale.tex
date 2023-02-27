@@ -17,12 +17,13 @@
     \item $H_G$ è il più grande sottogruppo normale di $G$ contenuto in $H$.
 
         Ogni altro sottogruppo normale di $G$ contenuto in $H$ è contenuto in $H_G$.
-    \item $\indice{G}{H} = m \allora \indice{G}{H_G} \dividetxt m!$
+    \item $\indice{G}{H} = m \allora \dfrac{G}{H_G} \le S_m \allora \indice{G}{H_G} \dividetxt m!$
 \end{itemize}
 
 \section{Applicazioni}
 \label{sec:cuore_normale_applicazioni}
 
+\textbf{1.}
 $A_5$ contiene sottogruppi di ordine 15 (e indice 4)?
 
 Poniamo per assurdo che esista un sottogruppo $H \le A_5$ di ordine 15 e indice 4.
@@ -37,5 +38,11 @@ $A_5$ è un gruppo semplice, quindi $H_G$ non può che essere il sottogruppo ide
 
 60 non divide 24, quindi l'ipotesi per assurdo è falsa e non esiste un sottogruppo di $A_5$ di ordine 15.
 
-
+\bigskip
+\noindent\textbf{2.}
+Se $H$ è un sottogruppo non normale di $G$, di indice $m$ e $H_G=1$ (per esempio perché $\ordine{H}$ è primo,
+oppure perché $G$ è semplice), allora:
+\begin{equation*}
+    G \isomorfo \dfrac{G}{H_G} \le S_m
+\end{equation*}
 
