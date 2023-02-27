@@ -1,0 +1,41 @@
+\chapter{Cuore normale}
+\label{ch:cuore_normale}
+
+\section{Definizione}
+\label{sec:cuore_normale_definizione}
+
+\begin{equation*}
+    H_G = \bigcap_{x \in G} xHx^{-1} \quad \text{con } H \le G
+\end{equation*}
+
+\section{Proprietà}
+\label{sec:cuore_normale_proprieta}
+
+\begin{itemize}
+    \item $H_G \subseteq H$
+    \item $H_G \normale G$
+    \item $H_G$ è il più grande sottogruppo normale di $G$ contenuto in $H$.
+
+        Ogni altro sottogruppo normale di $G$ contenuto in $H$ è contenuto in $H_G$.
+    \item $\indice{G}{H} = m \allora \indice{G}{H_G} \dividetxt m!$
+\end{itemize}
+
+\section{Applicazioni}
+\label{sec:cuore_normale_applicazioni}
+
+$A_5$ contiene sottogruppi di ordine 15 (e indice 4)?
+
+Poniamo per assurdo che esista un sottogruppo $H \le A_5$ di ordine 15 e indice 4.
+\begin{equation*}
+    \indice{A_5}{H} = 4 \allora \indice{A_5}{H_{A_5}} \dividetxt 4! = 24
+\end{equation*}
+
+$A_5$ è un gruppo semplice, quindi $H_G$ non può che essere il sottogruppo identico:
+\begin{equation*}
+    H_{A_5} = 1 \allora \indice{A_5}{H_{A_5}} = \ordine{A_5} = 60
+\end{equation*}
+
+60 non divide 24, quindi l'ipotesi per assurdo è falsa e non esiste un sottogruppo di $A_5$ di ordine 15.
+
+
+
